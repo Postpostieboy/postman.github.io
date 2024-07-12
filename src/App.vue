@@ -61,9 +61,9 @@
 <script setup lang="ts">
 import {computed, onMounted, reactive, ref} from "vue";
 import {IChannelInfo} from "@/api";
-import {useAppRoot} from "mcdis-app";
+import {useAppRoot} from "@mcdis/app";
 import {PlaneBullet} from "@/modules/planeBullet";
-import {CachelessRouterView, Grid, HStack, Panel, TextLabel} from "mcdis-app-ui";
+import {CachelessRouterView, Grid, HStack, Panel, TextLabel,} from "@mcdis/app-ui";
 
 const app = useAppRoot();
 const channels = reactive(new Array<IChannelInfo>());
