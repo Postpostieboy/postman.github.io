@@ -26,11 +26,11 @@
 
 <script setup lang="ts">
 import {onMounted, reactive, ref} from "vue";
-import {useAppRoot} from "mcdis-app";
+import {useAppRoot} from "@mcdis/app";
 import {PlaneBullet} from "@/modules/planeBullet";
 import {ChannelMsgType} from "@/api";
 import {DateTime} from "luxon";
-import {HStack, Spinner, TextLabel, VStack} from "mcdis-app-ui";
+import {HStack, Spinner, TextLabel, VStack} from "@mcdis/app-ui";
 
 const props = defineProps({
   channelId: {
