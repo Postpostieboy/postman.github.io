@@ -1,5 +1,5 @@
 import {IMessageDecoder, IMessageDecoderRegistry} from "../../interface";
-import {injectable} from "mcdis-app";
+import {injectable} from "@mcdis/app";
 
 @injectable('message-decoder-registry')
 export class MessageDecoderRegistry implements IMessageDecoderRegistry {
