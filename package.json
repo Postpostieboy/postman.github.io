@@ -13,9 +13,9 @@
     "buffer": "^6.0.3",
     "core-js": "^3.8.3",
     "luxon": "^3.3.0",
-    "mcdis-app": "^2.0.72",
-    "mcdis-app-ui": "^3.0.942",
-    "mcdis-design": "^2.2.158",
+    "@mcdis/app": "^3.0.85",
+    "@mcdis/app-ui": "^3.6.1714",
+    "@mcdis/design": "^2.3.306",
     "vue": "^3.2.13",
     "web3": "^4.0.2",
     "web3-eth-contract": "^4.0.2"
