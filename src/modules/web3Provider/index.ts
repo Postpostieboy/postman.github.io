@@ -1,4 +1,4 @@
-import {Application, IAppModule, injectable, Log} from "mcdis-app";
+import {Application, IAppModule, injectable, Log} from "@mcdis/app";
 import {Web3} from "web3";
 
 @injectable('web3-provider')
