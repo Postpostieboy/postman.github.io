@@ -1,6 +1,6 @@
-import {Application, IAppModule, IContainer, injectable, Log} from "mcdis-app";
+import {Application, IAppModule, IContainer, injectable, Log} from "@mcdis/app";
 import {Web3Provider} from "@/modules/web3Provider";
-import {Lazy, lazy} from "mcdis-design";
+import {Lazy, lazy} from "@mcdis/design";
 import {ContainerApi} from "@/api";
 
 @injectable('plane-container')

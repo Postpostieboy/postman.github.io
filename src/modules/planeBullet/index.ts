@@ -1,4 +1,4 @@
-import {Application, IAppModule, IContainer, injectable, Log} from "mcdis-app";
+import {Application, IAppModule, IContainer, injectable, Log} from "@mcdis/app";
 import {PlaneContainer} from "@/modules/planeContainer";
 import {BulletApi} from "@/api/BulletApi";
 import {MessageDecoderRegistry} from "@/modules/messageDecoderRegistry/MessageDecoderRegistry";

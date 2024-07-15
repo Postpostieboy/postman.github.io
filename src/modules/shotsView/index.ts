@@ -1,4 +1,4 @@
-import {Application, IAppModule, Log} from "mcdis-app";
+import {Application, IAppModule, Log} from "@mcdis/app";
 import {RouteRecordRaw} from "vue-router";
 import ShotsView from './view/ShotsView.vue';
 
