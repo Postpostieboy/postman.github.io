@@ -7,16 +7,27 @@
       <v-stack justify-self="stretch">
         <span class="date">{{ shot.date.toLocaleString(DateTime.DATE_FULL) }}</span>
         <h-stack align="start" gap justify-self="stretch">
-          <text-label class="time"
-                      radius="0.5rem"
-                      color="#3186ee"
-                      pad="0.1rem 0.5rem"
-                      font-size="0.9em"
-                      background="#172028"
-                      style="text-shadow: 1px -1px 4px #1830C9;">
+
+<!--          <text-label class="time"-->
+<!--                      radius="0.5rem"-->
+<!--                      color="#3186ee"-->
+<!--                      pad="0.1rem 0.5rem"-->
+<!--                      font-size="0.9em"-->
+<!--                      background="#172028"-->
+<!--                      style="text-shadow: 1px -1px 4px #1830C9;">-->
+<!--            {{ shot.date.toLocaleString(DateTime.TIME_24_SIMPLE) }}-->
+<!--          </text-label>-->
+
+          <p class="time" style="text-shadow: 1px -1px 4px #1830C9;">
             {{ shot.date.toLocaleString(DateTime.TIME_24_SIMPLE) }}
-          </text-label>
-          <text-label color="#e0e0e0" v-html="shot.body"/>
+          </p>
+
+<!--          <text-label color="#e0e0e0" v-html="shot.body"/>-->
+          <p style="color: #e0e0e0" v-html="shot.body">
+
+          </p>
+
+
         </h-stack>
       </v-stack>
     </template>
@@ -49,6 +60,7 @@ type Shot = {
 const app = useAppRoot();
 
 const shots = reactive<Shot[]>([]);
+
 const loaded = ref(false);
 
 onMounted(() => {
